@@ -16,7 +16,7 @@ const icons = [iconFacebook, iconAudio, iconInstagram, iconTwitter, iconYoutube]
 
 // Modal
 const openModal = document.querySelector(".email-button")
-const closeModal = document.querySelectorAll(".submit-button,.cancel-button")
+const closeModal = document.querySelectorAll(".cancel-button") //removed ".submit-button,"
 const modal = document.getElementById("modal")
 const contentContainer = document.getElementById("content-container")
 
@@ -27,14 +27,14 @@ openModal.addEventListener("click", () => {
     modal.showModal();
 })
 
-// closeModal.forEach(item => {
-//     item.addEventListener("click", () => {
-//         if(item = ".cancel-button") {
-//             modal.setAttribute(onsubmit,"return false");
-//         }
-//         modal.close();
-// })
-// })
+closeModal.forEach(item => {
+    item.addEventListener("click", () => {
+        if(item = ".cancel-button") {
+            modal.setAttribute(onsubmit,"return false");
+        }
+        modal.close();
+})
+})
  
 // Mute Button
 const video = document.getElementById("video");
