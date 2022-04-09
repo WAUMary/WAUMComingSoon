@@ -39,6 +39,7 @@ html {
     height: 100%;
     width: 100%;
     z-index: -1;
+    overflow: auto;
 }
   
 video {
@@ -162,6 +163,10 @@ footer {
     width: 100%;
 }
 
+.buttons {
+    row-gap: 20px;
+}
+
 .button {
   align-items: center;
   background-color: var(--black);
@@ -275,12 +280,12 @@ form {
     margin: 1em;
 }
 
-textarea {
-    resize: none;
+input {
+    width: 66%;
 }
 
-.buttons {
-    gap: 20;
+textarea {
+    flex: 1;
 }
 
 .cancel-button {
@@ -377,7 +382,7 @@ textarea {
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 480px) {
     #p1 {
         font-size: 3em;
     }
@@ -393,6 +398,13 @@ textarea {
 
     .button {
         font-size: 1em;
+    }
+
+    dialog {
+        height: 100%;
+        max-height: none;
+        width: 100%;
+        max-width: none;
     }
 }
 
@@ -432,6 +444,20 @@ textarea {
 
     .time h2 {
         transform: scaleY(.8);
+    }
+}
+
+@media (max-height: 480px) {
+    .button {
+        font-size: 1em;
+    }
+
+    dialog {
+        height: 100%;
+        max-height: none;
+        width: 100%;
+        max-width: none;
+
     }
 }
 
