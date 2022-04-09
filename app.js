@@ -25,6 +25,7 @@ openModal.addEventListener("click", () => {
         modal.setAttribute(onsubmit,"")
     }
     modal.showModal();
+    modal.style.visibility = "visible";
 })
 
 closeModal.forEach(item => {
@@ -32,6 +33,7 @@ closeModal.forEach(item => {
         if(item = ".cancel-button") {
             modal.setAttribute(onsubmit,"return false");
         }
+        modal.style.visibility = "hidden";
         modal.close();
 })
 })

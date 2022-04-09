@@ -252,6 +252,7 @@ i::before{
 }
 
 dialog {
+    visibility: hidden;
     margin: auto;
     color: var(--black);
     background-color: var(--yellow);
