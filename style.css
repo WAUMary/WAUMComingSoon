@@ -357,9 +357,17 @@ textarea {
      }
  }
 
- @media (max-height: 650px) {
-    
-    #title{
+ @media (max-height: 655px) {
+    #p1 {
+        font-size: 3em;
+    }
+
+    #p2 {
+        font-size: 6em;
+        -webkit-text-stroke: 2px var(--yellowdark);
+    }
+
+    #title {
         flex-direction: row;
     }
 
@@ -410,29 +418,21 @@ textarea {
 }
 
 @media (max-height: 600px) {
-    #title {
-        margin: 15px 15px 10px;
-     }
-
     #p1 {
         font-size: 2.5em;
     }
     
     #p2 {
-        font-size: 7em;
-        -webkit-text-stroke: 2px var(--yellowdark);
+        font-size: 4em;
+        -webkit-text-stroke: 1px var(--yellowdark);
     }
     
     #subtitle {
-        font-size: 1.5em;
+        font-size: 24px;
     }
 }
 
 @media (max-height: 500px) {
-    #p2 {
-        font-size: 6em;
-    }
-
     footer {
         flex-direction: row;
         justify-content: space-between;
