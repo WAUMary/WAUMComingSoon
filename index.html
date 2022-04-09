@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are Uncle Mary</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts/webfontkit/stylesheet.css" type="text/css" charset="utf-8" />
+    <script src="https://kit.fontawesome.com/4cccac8acb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="site-container">
+        <video id="video" src="media\tiny-desk.mov" loop autoplay muted></video>
+        <a id="audio-control">
+            <i id="audio-icon" class="fa-regular fa-volume-slash fa-4x"></i>
+        </a>
+        <div class="content-container" id="content-container" style="visibility: visible;">
+            <div id="title">
+                <p id="p1">We Are</p>
+                <p id="p2">Uncle Mary</p>
+            </div>
+            <h2 id="subtitle">Website Coming Soon!</h3>
+            <div id="countdown" class="countdown">
+                <div class="time">
+                    <h2 id="day-counter">00</h2>
+                    <div class="time-unit" id="days">DAYS</div>
+                </div>
+                <div class="time">
+                    <h2 id="hour-counter">00</h2>
+                    <div class="time-unit" id="hours">HOURS</div>
+                </div>
+                <div class="time">
+                    <h2 id="minute-counter">00</h2>
+                    <div class="time-unit" id="minutes">MINUTES</div>
+                </div>
+                <div class="time">    
+                    <h2 id="second-counter">00</h2>
+                    <div class="time-unit" id="seconds">SECONDS</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <a class="button email-button">Contact Us</a>
+            <div class="social-container">
+                <a href="https://www.facebook.com/weareunclemary/" target="_blank">
+                    <i id="facebook" class="fab fa-facebook-f fa-4x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.instagram.com/weareunclemary/" target="_blank">
+                    <i id="instagram" class="fab fa-instagram fa-4x" aria-hidden="true"></i>
+                </a>
+                <!-- <a href="" target="_blank">
+                    <i id="soundcloud" class="fab fa-soundcloud fa-4x" aria-hidden="true"></i>
+                </a> -->
+                <a href="https://twitter.com/weareunclemary" target="_blank">
+                    <i id="twitter" class="fab fa-twitter fa-4x" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCrRruQq_WgcWhC08891QZ9Q" target="_blank">
+                    <i id="youtube" class="fa-brands fa-youtube fa-4x" aria-hidden="true"></i>
+                </a>
+            </div>
+            <a id="site-by" href="https://www.instagram.com/imsotravis_/"target="_blank">Website by Travis Pearsall</a>
+        </footer>
+    </div>
+    <dialog class="modal" id="modal">
+        <form method="post" action="https://formsubmit.co/unclemary@weareunclemary.com">
+            <h2>Contact Us</h2>
+            <p><label for="Name" ><input type="text" id="Name" name="Name" placeholder="Full Name" size="30" required></label></p>
+            <p><label for="Company"><input type="text" id="Company" name="Company" placeholder="Company Name" size="30"></label></p>
+            <p><label for="Email"><input type="email" id="Email" name="Email" placeholder="Email" size="30" required></label></p>
+            <textarea type="text" id="Message" name="Message" placeholder="Message..." cols="30" rows="3" maxlength="3000" required></textarea>
+            <div class="buttons">
+                <button type="submit" class="button submit-button">Submit</button>
+                <button type="button" class="button cancel-button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+    <script src="app.js"></script>
+</body>
+</html>
